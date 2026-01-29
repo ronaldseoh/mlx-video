@@ -20,7 +20,7 @@ def get_model_path(model_repo: str):
             local_files_only=False,
             resume_download=True,
             allow_patterns=["*.safetensors", "*.json"],
-            ignore_patterns=["ltx-2-19b-dev-fp4.safetensors", "ltx-2-19b-dev-fp8.safetensors", "ltx-2-19b-dev.safetensors", "ltx-2-19b-distilled-fp8.safetensors", "ltx-2-19b-distilled-lora-384.safetensors", "ltx-2-spatial-upscaler-x2-1.0.safetensors", "ltx-2-temporal-upscaler-x2-1.0.safetensors"]
+            ignore_patterns=["ltx-2-19b-dev-fp4.safetensors", "ltx-2-19b-dev-fp8.safetensors", "ltx-2-19b-dev.safetensors", "ltx-2-19b-distilled-fp8.safetensors", "ltx-2-19b-distilled-lora-384.safetensors"]
         ))
 
 def apply_quantization(model: nn.Module, weights: mx.array, quantization: dict):
